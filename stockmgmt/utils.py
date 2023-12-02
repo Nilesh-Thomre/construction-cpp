@@ -3,7 +3,7 @@ import json
 import base64
 from botocore.exceptions import ClientError
  
-def get_secretCredentials(secret_name = "22209972-secretKey", region_name="eu-west-1"):
+def get_secretCredentials(secret_name = "22209972-secretKey", region_name="us-east-1"):
     # Create a Secrets Manager client
     session = boto3.session.Session()
     client = session.client(
